@@ -45,13 +45,6 @@ a{
 	text-decoration: none;
 	color: inherit;
 }
-.container{
-	max-width: 1011px;
-	margin: 0 auto;
-}
-body{
-	font: 20px PTSerif, serif;
-}
 @font-face{
 	font-family: PTSerif;
 	src: url(fonts/PT_Serif-Web-Regular.ttf);
@@ -67,6 +60,41 @@ body{
 	src: url(fonts/Montserrat-Bold.ttf);
 	font-weight: bold;
 }
+button{
+	font: normal 22px Montserrat, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+input{
+	border: none;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	background: #eee;
+}
+body{
+	font: 20px PTSerif, serif;
+}
+.btn-color-1{
+	background-color: #c62314;
+}
+.btn-color-2{
+	background-color: #130e27;
+}
+.container{
+	max-width: 1011px;
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
+}
 /* ----- HEAD SECTION ----- */
 .head-section{
 	width: 100%;
@@ -79,8 +107,10 @@ body{
 	height: 94px;
 	display: inline-block;
 	overflow: hidden;
+	margin-top: 38px;
 }
 .menu{
+	margin-top: 60px;
 	float: right;
 }
 .menu li{
@@ -92,7 +122,7 @@ body{
 .menu li a{
 	display: block;
 	padding: 12px 15px;
-	border-radius: 3px;
+	border-radius: 7px;
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
 	-o-border-radius: 7px;
@@ -103,4 +133,62 @@ body{
 }
 .menu li a:hover{
 	background-color: #130e27;
+}
+.slogan{
+	width: 50%;
+	margin-top: 10%;
+}
+.slogan h1{
+	font: bold 90px Montserrat, sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+}
+.slogan h1 span{
+	color: #130e27;
+}
+.slogan p{
+	color: #fff;
+}
+.request{
+	width: 400px;
+	padding: 24px;
+	text-align: center;
+	box-sizing: border-box;
+	background-color: #fff;
+	position: absolute;
+	right: 0;
+	bottom: -85px;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-o-border-radius: 7px;
+	box-shadow: 0 5px 37px rgba(0,0,0, 0.7);
+}
+.request h3{
+	font: normal 22px Montserrat, sans-serif;
+	margin-bottom: 37px;
+}
+.request input[type="text"]{
+	display: block;
+	width: 353px;
+	height: 57px;
+	margin-bottom: 16px;
+}
+.request input[type="checkbox"]{
+	width: 19px;
+	height: 18px;
+	margin: 0;
+	vertical-align: middle;
+	margin-right: 23px;
+}
+.accept{
+	text-align: left;
+	margin-bottom: 22px;
+}
+.accept label{
+	cursor: pointer;
+}
+.request button{
+	padding: 15px;
+	width: 100%;
 }
