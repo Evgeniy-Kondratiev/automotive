@@ -73,6 +73,10 @@ button{
 	cursor: pointer;
 }
 input{
+	box-sizing: border-box;
+	color: #5a5a5a;
+	font: 20px PTSerif, serif;
+	padding: 20px;
 	border: none;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -143,12 +147,13 @@ body{
 	color: #fff;
 	text-transform: uppercase;
 }
-.slogan h1 span{
+.slogan h1>span{
 	color: #130e27;
 }
 .slogan p{
 	color: #fff;
 }
+/* ----- REQUEST FORM ----- */
 .request{
 	width: 400px;
 	padding: 24px;
@@ -174,16 +179,46 @@ body{
 	height: 57px;
 	margin-bottom: 16px;
 }
+.accept{
+	text-align: left;
+	margin-bottom: 22px;
+	position: relative;
+}
 .request input[type="checkbox"]{
+	visibility: hidden;
 	width: 19px;
 	height: 18px;
 	margin: 0;
 	vertical-align: middle;
 	margin-right: 23px;
 }
-.accept{
-	text-align: left;
-	margin-bottom: 22px;
+.request input[type="checkbox"] + label:before,
+.request input[type="checkbox"] + label:after,
+.request input[type="checkbox"]:checked + label:after{
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 5px;
+	width: 19px;
+	height: 18px;
+	background: #eee;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	transition: all .2s ease-in-out;
+}
+.request input[type="checkbox"] + label:after{
+	opacity: 0;
+	transition: all .2s;
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	-o-transition: all .2s;
+}
+.request input[type="checkbox"]:checked + label:after{
+	opacity: 1;
+	background: #5a5a5a;
 }
 .accept label{
 	cursor: pointer;
@@ -191,4 +226,33 @@ body{
 .request button{
 	padding: 15px;
 	width: 100%;
+}
+/* ----- SERVICES SECTION ----- */
+.services{
+	width: 100%;
+	font-size: 0;
+	padding-bottom: 70px;
+}
+.services h1{
+	font: bold 50px Montserrat, sans-serif;
+	text-transform: uppercase;
+	margin: 40px 0 92px 16px;
+}
+.services h1>span{
+	color: #c62314;
+}
+.service{
+	width: 25%;
+	display: inline-block;
+}
+.service img{
+	display: block;
+	margin: 0 auto 40px auto;
+}
+.services p{
+	font: normal 20px PTSerif, serif;
+	color: #161616;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
 }
