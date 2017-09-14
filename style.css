@@ -185,7 +185,7 @@ body{
 }
 .request input[type="text"]{
 	display: block;
-	width: 353px;
+	width: 100%;
 	height: 57px;
 	margin-bottom: 16px;
 }
@@ -265,4 +265,20 @@ body{
 	text-align: center;
 	width: 80%;
 	margin: 0 auto;
+}
+.our-story{
+	padding: 20px;
+	background: #130e27;
+	overflow: hidden;
+}
+.our-story p{
+	color: #fff;
+	width: 70%;
+	display: inline-block;
+	margin-left: 2%;
+}
+.our-story .btn-color-1{
+	width: 25%;
+	padding: 15px;
+	float: right;
 }
