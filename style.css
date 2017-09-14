@@ -135,6 +135,16 @@ body{
 	-moz-transition: background-color .2s ease-in-out;
 	-o-transition: background-color .2s ease-in-out;
 }
+.menu-btn{
+	display: none;
+}
+.menu-btn span{
+	display: block;
+	width: 45px;
+	height: 7px;
+	margin-bottom: 5px;
+	background: #fff;
+}
 .menu li a:hover{
 	background-color: #130e27;
 }
