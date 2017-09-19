@@ -328,6 +328,8 @@ body{
 	-moz-border-radius: 5px;
 	-o-border-radius: 5px;
 	float: left;
+	position: relative;
+	z-index: 1000;
 }
 .pricing .box h3, .pricing .box ul{
 	margin-bottom: 35px;
@@ -342,6 +344,27 @@ body{
 	padding: 15px 0;
 	width: 70%;
 	padding: 12px 0 9px;
+}
+.action:before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 50px solid transparent;
+	border-left: 50px solid #c62314;
+	border-top: 50px solid #c62314;
+	border-radius: 5px 0 0 0;
+}
+.action:after{
+	content: "popular";
+	display: inline;
+	position: absolute;
+	top: 21px;
+	left: 5px;
+	font-size: 16px;
+	color: #1f1f1f;
+	transform: rotate(-45deg);
 }
 
 /* ----- RESPONSIVE ----- */
