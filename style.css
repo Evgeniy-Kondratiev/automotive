@@ -87,11 +87,17 @@ input{
 body{
 	font: 20px PTSerif, serif;
 }
-.site-color-1{
+.btn-color-1{
 	background-color: #c62314;
 }
-.site-color-2{
+.btn-color-2{
 	background-color: #130e27;
+}
+.site-color-1{
+	color: #c62314;
+}
+.site-color-2{
+	color: #130e27;
 }
 .section{
 	width: 100%;
@@ -365,6 +371,53 @@ body{
 	font-size: 16px;
 	color: #1f1f1f;
 	transform: rotate(-45deg);
+}
+/* ----- PRICING SECTION ----- */
+.testimonial{
+	padding-top: 150px;
+}
+.testi, .gall{
+	width: 50%;
+	float: left;
+}
+.testimonial h1{
+	font: bold 50px Montserrat, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.comment-box{
+	position: relative;
+	margin-bottom: 30px;
+	width: 87%;
+}
+.comment-box p{
+	text-align: left;
+	padding: 27px 60px 33px 27px;
+}
+.comment-box:last-child{
+	background: #efefef;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+.comment-box p>span{
+	display: block;
+	font-family: Montserrat;
+	margin-top: 20px;
+}
+.comment-box .foto{
+	position: absolute;
+	top: 50%;
+	right: -50px;
+	margin-top: -54px;
+	display: inline-block;
+	width: 105px;
+	height: 105px;
+	border-radius: 50%;
+	box-shadow: 0 5px 16px rgba(0,0,0, 0.7);
+	overflow: hidden;
 }
 
 /* ----- RESPONSIVE ----- */
