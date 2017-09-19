@@ -87,10 +87,10 @@ input{
 body{
 	font: 20px PTSerif, serif;
 }
-.btn-color-1{
+.site-color-1{
 	background-color: #c62314;
 }
-.btn-color-2{
+.site-color-2{
 	background-color: #130e27;
 }
 .section{
@@ -351,9 +351,6 @@ body{
 	}
 	.container{
 		padding: 0 10px;
-	}
-	.request{
-		right: 10px;
 	}
 }
 @media screen and (max-width: 980px){
