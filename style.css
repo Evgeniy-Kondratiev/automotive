@@ -177,9 +177,6 @@ body{
 	color: #fff;
 	text-transform: uppercase;
 }
-.slogan h1>span{
-	color: #130e27;
-}
 .slogan p{
 	color: #fff;
 	margin-bottom: 30px;
@@ -407,19 +404,41 @@ body{
 	font-family: Montserrat;
 	margin-top: 20px;
 }
-.comment-box .foto{
-	position: absolute;
-	top: 50%;
-	right: -50px;
-	margin-top: -54px;
+.foto-box{
 	display: inline-block;
 	width: 105px;
 	height: 105px;
 	border-radius: 50%;
-	box-shadow: 0 5px 16px rgba(0,0,0, 0.7);
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	box-shadow: 0 5px 16px rgba(0,0,0, 0.5);
+	-webkit-box-shadow: 0 5px 16px rgba(0,0,0, 0.5);
+	-moz-box-shadow: 0 5px 16px rgba(0,0,0, 0.5);
+	-o-box-shadow: 0 5px 16px rgba(0,0,0, 0.5);
 	overflow: hidden;
 }
-
+.comment-box .foto-box{
+	position: absolute;
+	top: 50%;
+	right: -50px;
+	margin-top: -54px;
+}
+.gall .wrap{
+	width: 90%;
+	margin: 50px auto 30px auto;
+}
+.gall .foto-box{
+	margin: 0 0 28px 40px;
+}
+.pictures a{
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	text-decoration: underline;
+	font-family: Montserrat;
+	text-transform: uppercase;
+}
 /* ----- RESPONSIVE ----- */
 @media screen and (max-width: 1010px){
 	.slogan p{
@@ -458,6 +477,22 @@ body{
 		width: 50%;
 		margin-bottom: 40px;
 	}
+	.pricing .box{
+		float: none;
+		width: 45%;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+	}
+	.pricing .box:last-child{
+		margin-left: 27%;
+	}
+	.testi, .gall{
+		width: 100%;
+		float: none;
+	}
+	.gall .wrap{
+		width: 75%;
+	}
 }
 @media screen and (max-width: 480px){
 	.slogan h1{
@@ -478,5 +513,19 @@ body{
 		margin: 20px auto 0 auto;
 		width: 50%;
 		display: block;
+	}
+
+	.pricing .box{
+		display: block;
+		float: none;
+		width: 90%;
+		padding-bottom: 20px;
+	}
+	.pricing .box, .pricing .box:last-child{
+		margin: 0 auto 20px auto;
+	}
+	.gall .foto-box{
+		display: block;
+		margin: 0 auto 40px auto;
 	}
 }
