@@ -1,0 +1,9 @@
+$(document).ready(function(){
+	$(".menu-btn").click(function(e){
+		e.preventDefault();
+		$(".menu").toggleClass("active");
+	});
+	$(".menu").click(function(e){
+		$(this).removeClass("active");
+	});
+})

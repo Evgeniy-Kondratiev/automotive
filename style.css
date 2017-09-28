@@ -129,9 +129,12 @@ body{
 	overflow: hidden;
 	margin-top: 38px;
 }
-.menu{
+.menu, .menu-btn{
 	margin-top: 60px;
 	float: right;
+}
+.menu{
+	display: table-cell;
 }
 .menu li{
 	display: inline-block;
@@ -181,6 +184,9 @@ body{
 	color: #fff;
 	margin-bottom: 30px;
 }
+
+
+
 /* ----- REQUEST FORM ----- */
 .request{
 	position: relative;
@@ -214,6 +220,8 @@ body{
 	text-align: left;
 	margin-bottom: 22px;
 	position: relative;
+	left:0;
+	right: 0;
 }
 .request-form input[type="checkbox"]{
 	visibility: hidden;
@@ -467,8 +475,61 @@ body{
 	}
 }
 @media screen and (max-width: 980px){
+	.container{
+		position: static;
+	}
+	.menu{
+		width: 0%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: #c62314;
+		display: table;
+		margin: 0;
+		z-index: 2000;
+	}
 	.nav{
 		display: none;
+	}
+	.active{
+		width: 50%;
+		transition: all .2s ease-in-out;
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		-o-transition: all .2s ease-in-out;
+	}
+	.active .nav{
+	display: table-cell;
+	vertical-align: middle;
+	}
+	.active li{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.active:after, .active:before{
+		content: "";
+		display: block;
+		position: absolute;
+		top: 60px;
+		right: 20px;
+		background: #fff;
+		width: 30px;
+		height: 5px;
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		cursor: pointer;
+	}
+	.active:before{
+		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
 	}
 	.menu-btn{
 		display: block;
@@ -524,6 +585,9 @@ body{
 	}
 }
 @media screen and (max-width: 480px){
+	.active{
+		width: 100%;
+	}
 	.slogan h1{
 		font-size: 50px;
 	}
@@ -543,7 +607,6 @@ body{
 		width: 50%;
 		display: block;
 	}
-
 	.pricing .box{
 		display: block;
 		float: none;
